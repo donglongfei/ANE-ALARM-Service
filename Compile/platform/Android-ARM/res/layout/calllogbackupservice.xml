@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:padding="4dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingBottom="4dip"
+        android:text="@string/notification"/>
+
+    <Button android:id="@+id/start_alarm"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:text="@string/start">
+        <requestFocus />
+    </Button>
+
+    <Button android:id="@+id/stop_alarm"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:text="@string/stop" />
+
+</LinearLayout>

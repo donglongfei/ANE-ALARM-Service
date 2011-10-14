@@ -1,0 +1,13 @@
+	<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+	  <id>com.mark.alarmService</id>
+	  <versionNumber>2</versionNumber>
+	  <platforms>
+      <platform name="Android-ARM">
+	        <applicationDeployment>
+	          <nativeLibrary>AlarmService.jar</nativeLibrary>
+	          <initializer>com.mark.android.AlarmExtension</initializer>
+	          <finalizer>com.mark.android.AlarmExtension</finalizer>
+	        </applicationDeployment>
+	      </platform>
+	  </platforms>
+	</extension>

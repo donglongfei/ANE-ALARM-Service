@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.5.2" build="22243" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/mark/aneinterface/AlarmService" mod="1318565413000" signatureChecksum="3451078278" >
+        <def id="com.mark.aneinterface:AlarmService" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_779043ffbca97265586e73a450bca1d405ad333c395bbb99b9bae829ab6160a3_flash_display_Sprite" mod="1318565414295" signatureChecksum="2078702221" >
+        <def id="_779043ffbca97265586e73a450bca1d405ad333c395bbb99b9bae829ab6160a3_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="4b23a53d4bf087ff5980c20031218d65e249b2e7040de396fb04b9151f4eb589"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

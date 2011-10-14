@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="主页视图">
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import com.mark.aneinterface.AlarmService;
+			
+			private var service:AlarmService=new AlarmService();
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				service.startAlarm();
+			}
+			
+			protected function button2_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				service.stopAlarm();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:layout>
+		<s:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+	</s:layout>
+	
+	<s:Button label="REGISTER NOTIFICATION" click="button1_clickHandler(event)"/>
+	
+	<s:Button label="UNREGISTER NOTIFICATION" click="button2_clickHandler(event)"/>
+</s:View>

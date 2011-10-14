@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, NotificationLibActivity!</string>
+    <string name="app_name">NotificationLib</string>
+    <string name="notification">来自AIR应用的通知</string>
+    <string name="notification_started">银行到款100潘,:-)</string>
+    <string name="notification_finished">银行扣款1000潘,:-(</string>
+    <string name="repeating_scheduled">已设定定时通知服务</string>
+    <string name="repeating_unscheduled">已取消定时服务</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+</resources>
