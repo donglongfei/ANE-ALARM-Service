@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -64,12 +65,18 @@ public class NotificationService extends Service {
 	}
 	
 	private void showNotification(String key){
-		CharSequence text=getText(bundle.getInt(key));
-		int id = bundle.getInt("drawable.communication");
-		Notification notification=new Notification(id, text, System.currentTimeMillis());
-		PendingIntent contentIntent=PendingIntent.getActivity(this, 0, new Intent(this,AlarmFunction.class), 0);
-		notification.setLatestEventInfo(this, getText(bundle.getInt("string.notification")), text, contentIntent);
-		mNM.notify(bundle.getInt(key),notification);
+		try{
+			CharSequence text=getText(bundle.getInt(key));
+			int id = bundle.getInt("drawable.communication");
+			Notification notification=new Notification(id, text, System.currentTimeMillis());
+			Intent notificationIntent = new Intent(this, Class.forName(this.getPackageName() + ".AppEntry"));
+			notificationIntent.setData(Uri.parse("test"));
+			PendingIntent contentIntent=PendingIntent.getActivity(this, 0, notificationIntent, 0);
+			notification.setLatestEventInfo(this, getText(bundle.getInt("string.notification")), text, contentIntent);
+			mNM.notify(bundle.getInt(key),notification);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
 	private final IBinder mBinder=new Binder(){

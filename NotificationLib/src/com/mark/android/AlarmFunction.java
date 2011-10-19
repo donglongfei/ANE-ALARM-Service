@@ -56,7 +56,6 @@ public class AlarmFunction implements FREFunction {
 			 /** use intent action name to locate the service. In Flex application descriptor file, we will 
 			  * use full class name to specify the intent and the action name. 
 			   **/	
-			 
 			 mAlarmSender=PendingIntent.getService(activity, 0, ntfIntent,0);
 					 
 			 int cmd;
